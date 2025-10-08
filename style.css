@@ -1,0 +1,47 @@
+.y {
+    width: 100;
+    height: 100;
+}
+body{
+   background-image: url("img/c7a952ab-959c-4d16-8bb5-025a8d94cfbc.jpg");
+   background-size: cover;
+   background-position: 0;
+   background-repeat: no-repeat;
+}
+#money {
+    color: white;
+}
+#level {
+    color: white;
+}
+.f {
+    background-color: rgb(9, 2, 56);
+}
+.b {
+    width: 100;
+    height: 100;
+}
+.c {
+    color: #000000;
+    height: 105;
+}
+.r {
+    color: #ffffff;
+    height: 105;
+}
+.t {
+    position: relative;
+    top: -30;
+}
+.g {
+    position: relative;
+    top: -30;
+}
+.m {
+    color: #ffffff;
+    height: 105;
+}
+.n {
+    width: 150;
+    height: 100;
+}
