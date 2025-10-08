@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button onclick="clik()" class="f"><img src="img/0cafd8c1-659f-464d-b26f-d00c9c0caa23.jpg" class="y"></button>
+        <p id="money">Ваши деньги: 0в</p>
+        <p id="level">Ваш уровень: 0</p>
+        <button class="r" onclick="upgrade()"><img class="b" src="img/6ac5720f-e943-46c5-8a93-1c03f9b3d26d.jpg"><p class="t">планета -50в</p></button>
+        <button class="c" onclick="upgrade1()"><img class="y" src="img/a21681af-c6dd-4e82-a0d6-150fe314dd12.jpg"><p class="g"> звезда -250в</p></button>
+        <button class="r" onclick="upgrade2()"><img class="b" src="img/1013ee59-9415-40d7-a997-c42f1db079c6.jpg"> <p class="t"> спутник -1250в</p></button>
+        <button class="m" onclick="upgrade3()"><img class="n" src="img/a1cc57ba-09f4-4900-ae83-dde57a9df134.jpg"><p class="g">черная дыра -2500в</p></button>
+        <button onclick="upgradeauto()">афтокликер 10000в</button>
+        <script>
+            alert("Вас приветствует вселеная кликер")
+            let sum = 0
+            let c = 1
+            let klui =0
+            function clik(){
+                sum += c
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                
+            }
+            function upgrade(){
+                sum -= 50
+                c +=1
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+                if(sum >= 1000000){
+                alert("Ты выйграл ты прокочал свою вселеную🥳🥳🥳")
+            }
+            if(sum <= -100){
+                alert("Ты проиграл😭😭😭")
+                sum = 0
+                c = 1
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+            }
+            }
+            function upgrade1(){
+                sum -= 250
+                c += 5
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+                if(sum >= 1000000){
+                alert("Ты выйграл ты прокочал свою вселеную🥳🥳🥳")
+            }
+            if(sum <= -100){
+                alert("Ты проиграл😭😭😭")
+                sum = 0
+                c = 1
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+            }
+            }
+            function upgrade2(){
+                sum -= 1250
+                c += 25
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+                if(sum >= 1000000){
+                alert("Ты выйграл ты прокочал свою вселеную🥳🥳🥳")
+            }
+            if(sum <= -100){      
+                alert("Ты проиграл😭😭😭")
+                sum = 0
+                c = 1
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+                if(sum >= 1000000){
+                alert("Ты выйграл ты прокочал свою вселеную🥳🥳🥳")
+            }
+            if(sum <= -100){
+                alert("Ты проиграл😭😭😭")
+                sum = 0
+                c = 1
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+            }
+            }
+            }
+            function upgrade3(){
+                sum -= 2500
+                c += 50
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+                if(sum >= 1000000){
+                alert("Ты выйграл ты прокочал свою вселеную🥳🥳🥳")
+            }
+            if(sum <= -100){
+                alert("Ты проиграл😭😭😭")
+                sum = 0
+                c = 1
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+            }
+            }
+            function upgradeauto(){
+                klui = 1
+                sum -= 10000
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                setTimeout("upgradecliker()",1000)
+                if(sum >= 1000000){
+                alert("Ты выйграл ты прокочал свою вселеную🥳🥳🥳")
+            }
+            if(sum <= -100){
+                alert("Ты проиграл😭😭😭")
+                sum = 0
+                c = 1
+                klui = 0
+                document.getElementById("money").textContent ="Ваши деньги: " + sum +"в";
+                document.getElementById("level").textContent ="Ваш уровень: " + c;
+            }
+            }
+            function upgradecliker(){
+                if (klui == 1 ){
+                 clik()
+                setTimeout("upgradecliker()",1000)   
+                }
+            }
+            if(sum>=1000){
+                
+            }
+            
+        </script>
+    </body>
+</html>
